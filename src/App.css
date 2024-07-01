@@ -1,0 +1,48 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  background-color: #2c3e50; /* Dark blue for good contrast */
+  color: black; /* Light grey for readability */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100px; /* Adjust height as needed */
+}
+
+header h1 {
+  font-size: 24px;
+  text-align: center; /* Center text */
+  margin: 0; /* Removes default margin */
+  width: 100%; /* Ensures the text can expand as needed for alignment */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1, nav ul li a {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  nav ul li {
+    display: block; /* Stack navigation items on smaller screens */
+  }
+
+  .team-member {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+
+  main {
+    width: 95%; /* More width for smaller screens */
+    padding: 10px;
+  }
+}
